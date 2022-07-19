@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<title>SCHOOL WEBSITE</title>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .abc{display: flex;justify-content: space-between !important;}
+        .header{width: 100%;height:20%;}
+    </style>
+
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid header">
+        <div class="container">
+          <h1>WELCOME TO!</h1>
+          <p>ABC SCHOOL</p>
+        </div>
+      </div>
+
+     <!-- A grey horizontal navbar that becomes vertical on small screens -->
+<nav class="navbar navbar-expand-sm bg-light abc">
+
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link 2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link 3</a>
+      </li>     
+    </ul>
+
+    <!-- Button to Open the Modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    LOGIN
+  </button>
+  
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Login</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+            <form action="/action_page.php">
+                <div class="form-group">
+                  <label for="email">Email address:</label>
+                  <input type="email" class="form-control" placeholder="Enter email" id="email">
+                </div>
+                <div class="form-group">
+                  <label for="pwd">Password:</label>
+                  <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+                </div>
+                <div class="form-group form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox"> Remember me
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-primary">LOGIN</button>
+              </form>
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  
+  </nav>
+  <br><br>
+  <div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+  
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="image.jpg" alt="Los Angeles" width="30%" height="30%">
+      </div>
+      <div class="carousel-item">
+        <img src="image.jpg" alt="Chicago"  width="30%" height="30%">
+      </div>
+      <div class="carousel-item">
+        <img src="image.jpg" alt="New York"  width="30%" height="30%">
+      </div>
+    </div>
+  
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  
+  </div>
+
+
+
+  <h1>Results!</h1>
+  <table class="table table-striped table-dark table-hover">
+    <tbody>
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>H.NO</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+            <tr>
+                <td>A</td>
+                <td>1</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>2</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>13</td>
+                <td>8</td>
+            </tr>  
+    </tbody>
+  </table>
+  <h3>Contact Us</h3>
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="email">NAME</label>
+      <input type="text" class="form-control" placeholder="Enter Name" id="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Phone:</label>
+      <input type="number" class="form-control" placeholder="Phone number" id="pwd">
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</body>

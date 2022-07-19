@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<title>LAYOUTS</title>
+<head>
+    <style>
+        .parent{
+            height: 100vh;
+            width: 100vw;
+            background-color: black;
+           /** display: flex;  **/
+
+        }
+        .child1
+        {
+            width: 100%;
+            height: 20%;
+            background-color: red;   
+        }
+        .child2
+        {
+            width: 100%;
+            height: 60%;
+            background-color: green;
+            display: flex;
+        }
+        .child3
+        {
+            width: 100%;
+            height: 20%;
+            background-color: aqua;
+            display: flex;
+        }
+        .child21
+        {
+            width: 25%;
+            height: 100%;
+            background-color: rgb(210, 210, 233);
+        }
+        .child22
+        {
+            width: 25%;
+            height: 100%;
+            background-color: rgb(42, 165, 63);
+        }
+        .child23
+        {
+            width: 25%;
+            height: 100%;
+            background-color: rgb(143, 143, 224);
+        }
+        .child24
+        {
+            width: 25%;
+            height: 100%;
+            background-color: rgb(165, 42, 104);
+        }
+        .child31
+        {
+            width: 50%;
+            height: 100%;
+            background-color: blue;
+        }
+        .child32
+        {
+            width: 50%;
+            height: 100%;
+            background-color: rgb(236, 152, 26);
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1"></div>
+        <div class="child2">
+            <div class="child21"></div>
+            <div class="child22"></div>
+            <div class="child23"></div>
+            <div class="child24"></div>
+        </div>
+        <div class="child3">
+            <div class="child31"></div>
+            <div class="child32"></div>
+        </div>
+    </div>
+</body>
+
+</html>
